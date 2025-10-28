@@ -29,6 +29,16 @@ img#chess-icon {
     height: auto; 
 }
 
+div #sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(70, 65, 65);
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
 body{
     background-color: rgb(255, 255, 255);
 }
