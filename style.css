@@ -29,6 +29,83 @@ img#chess-icon {
     height: auto; 
 }
 
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100%;
+    background-color: rgb(218, 211, 211);
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+#navbar {
+    margin-top: 5rem;
+    list-style: none; /* remove default bullets */
+    padding-left: 0; /* reset left padding so custom markers align */
+    margin-left: 0;
+}
+
+/* style each list item and add space for the custom marker */
+#navbar li {
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 2rem; /* space for the marker; adjust to taste */
+    margin: 1.2rem 0;
+    line-height: 1.2;
+}
+
+/* create a sized image marker using ::before */
+#navbar li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 90%;
+    transform: translateY(-50%);
+    width: 1.2rem;    /* desired marker width */
+    height: 1.2rem;   /* desired marker height */
+    background-image: url('chess-icon.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#app{
+    margin-left: 15rem;
+    margin-top: -1.5rem; /* leave space for the sidebar */
+    padding: 1rem;
+}
+
 body{
     background-color: rgb(255, 255, 255);
+}
+
+#board{
+    background-color: gray;
+}
+.chess-board{
+    width: 640px;
+    height: 640px;
+    margin-left: 30rem;
+    border: 25px solid #030303;
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #b3aaaa;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
+}
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    font-size:50px;
+    text-align:center;
+    display: table-cell;
+    vertical-align:middle;
 }

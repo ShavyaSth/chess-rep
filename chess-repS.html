@@ -8,28 +8,108 @@
 
     <!-- Link your styles and scripts (create these files next to this HTML) -->
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div id="sidebar">
     <header>
         <h1>Chess rep.</h1>
         <small>by Shavya</small>
         <img src="chess-icon.jpg" id="chess-icon" alt="Chess Icon">
     </header>
+    <ul id="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Repertoires</a></li>
+        <li><a href="#">Openings</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+    </div>
      <main>
         <!-- App root -->
         <div id="app" role="main">
-            
+            <h1>Welcome to chess-repS!</h1>
+            <p>Choose your difficulty</p>
+            <button id="easy-btn">Easy</button>
+            <button id="medium-btn">Medium</button> 
+            <button id="hard-btn">Hard</button>
         </div>
-    </main>
-
+        <div class="chess-board" id="board">
+            <!-- 1st -->
+            <div class="white">&#9820;</div>
+            <div class="black">&#9822;</div>
+            <div class="white">&#9821;</div>
+            <div class="black">&#9819;</div>
+            <div class="white">&#9818;</div>
+            <div class="black">&#9821;</div>
+            <div class="white">&#9822;</div>
+            <div class="black">&#9820;</div>
+            <!-- 2nd -->
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <div class="black">&#9823;</div>
+            <div class="white">&#9823;</div>
+            <!-- 3th -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- 4st -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!-- 5th -->
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <!-- 6th -->
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <!-- 7th -->
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <div class="white">&#9817;</div>
+            <div class="black">&#9817;</div>
+            <!-- 8th -->
+            <div class="black">&#9814;</div>
+            <div class="white">&#9816;</div>
+            <div class="black">&#9815;</div>
+            <div class="white">&#9813;</div>
+            <div class="black">&#9812;</div>
+            <div class="white">&#9815;</div>
+            <div class="black">&#9816;</div>
+            <div class="white">&#9814;</div>
+        </div>
+     </main>
     <footer>
-        
+        <small>&copy; <span id="year"></span> chess-repS</small>
     </footer>
-
-    <script>
-        // small inline script for convenience
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
