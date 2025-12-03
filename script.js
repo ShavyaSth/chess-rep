@@ -1,18 +1,22 @@
-// Set current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+var board = null;
 
-// Difficulty button handlers
-document.getElementById('easy-btn').addEventListener('click', function() {
-    console.log('Easy difficulty selected');
-    alert('Easy mode selected!');
-});
+    // Configuration options
+    var config = {
+        MouseEvents: true,
+        draggable: true,  // This lets you drag pieces!
+        position: 'start', // Sets pieces to standard starting position
+        onDrop: handleMove // The function to call when a user drops a piece
+        ,pieceTheme: 'https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png'
+    };
 
-document.getElementById('medium-btn').addEventListener('click', function() {
-    console.log('Medium difficulty selected');
-    alert('Medium mode selected!');
-});
+    // Initialize the board
+    board = Chessboard('myBoard', config);
 
-document.getElementById('hard-btn').addEventListener('click', function() {
-    console.log('Hard difficulty selected');
-    alert('Hard mode selected!');
-});
+    // This function runs every time you drop a piece
+    function handleMove(source, target, piece, newPos, oldPos, orientation) {
+        console.log("Source: " + source);
+        console.log("Target: " + target);
+        console.log("Piece: " + piece);
+        
+        // LATER: This is where we will send 'source' and 'target' to Python!
+    }
