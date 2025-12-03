@@ -9,14 +9,20 @@
     <!-- Link your styles and scripts (create these files next to this HTML) -->
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
 </head>
 <body>
-    <div id="sidebar">
+    <div id="topbar">
     <header>
-        <h1>Chess rep.</h1>
+        <h3>Chess rep.</h3>
         <small>by Shavya</small>
         <img src="chess-icon.jpg" id="chess-icon" alt="Chess Icon">
-    </header>
+    </header>  
+    </div>
+    <div id="sidebar">
     <ul id="navbar">
         <li><a href="#">Home</a></li>
         <li><a href="#">Repertoires</a></li>
@@ -24,90 +30,16 @@
         <li><a href="#">Settings</a></li>
     </ul>
     </div>
-     <main>
-        <!-- App root -->
-        <div id="app" role="main">
-            <h1>Welcome to chess-repS!</h1>
-            <p>Choose your difficulty</p>
-            <button id="easy-btn">Easy</button>
-            <button id="medium-btn">Medium</button> 
-            <button id="hard-btn">Hard</button>
-        </div>
-        <div class="chess-board" id="board">
-            <!-- 1st -->
-            <div class="white">&#9820;</div>
-            <div class="black">&#9822;</div>
-            <div class="white">&#9821;</div>
-            <div class="black">&#9819;</div>
-            <div class="white">&#9818;</div>
-            <div class="black">&#9821;</div>
-            <div class="white">&#9822;</div>
-            <div class="black">&#9820;</div>
-            <!-- 2nd -->
-            <div class="black">&#9823;</div>
-            <div class="white">&#9823;</div>
-            <div class="black">&#9823;</div>
-            <div class="white">&#9823;</div>
-            <div class="black">&#9823;</div>
-            <div class="white">&#9823;</div>
-            <div class="black">&#9823;</div>
-            <div class="white">&#9823;</div>
-            <!-- 3th -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- 4st -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <!-- 5th -->
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <!-- 6th -->
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <div class="black"></div>
-            <div class="white"></div>
-            <!-- 7th -->
-            <div class="white">&#9817;</div>
-            <div class="black">&#9817;</div>
-            <div class="white">&#9817;</div>
-            <div class="black">&#9817;</div>
-            <div class="white">&#9817;</div>
-            <div class="black">&#9817;</div>
-            <div class="white">&#9817;</div>
-            <div class="black">&#9817;</div>
-            <!-- 8th -->
-            <div class="black">&#9814;</div>
-            <div class="white">&#9816;</div>
-            <div class="black">&#9815;</div>
-            <div class="white">&#9813;</div>
-            <div class="black">&#9812;</div>
-            <div class="white">&#9815;</div>
-            <div class="black">&#9816;</div>
-            <div class="white">&#9814;</div>
-        </div>
-     </main>
+    <div id="content">
+    <h3>Welcome to ChessRep by Shavya.</h3>
+    <p>THE best chess tutor with your own personal chess assistant.</p>
+    <p>Get started by selecting difficulty according to your elo:</p>
+    <button>Beginner(0-699)</button>
+    <button>Intermediate(700-1299)</button>
+    <button>Advanced(1300-1699)</button>
+    <button>Expert(1700+)</button>
+    </div>
+    <div id="myBoard"></div>
     <footer>
         <small>&copy; <span id="year"></span> chess-repS</small>
     </footer>
