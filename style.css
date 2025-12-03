@@ -5,19 +5,19 @@ header{
 
 header small {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     left: 6rem;
     color: rgb(100, 100, 100);
     font-size: 0.8rem;
     margin: 0;
 }
 
-header h1 {
+header h3 {
     position: absolute;
     top: 1rem;
     left: 6rem;
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 0;
     }
 
@@ -25,8 +25,19 @@ img#chess-icon {
     position: absolute;
     top: 0.5rem;
     left: 1rem;
-    width: 70px; 
+    width: 80px; 
     height: auto; 
+}
+
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    z-index: 1000; /* ensure it stays above other content */
 }
 
 #sidebar {
@@ -72,39 +83,24 @@ img#chess-icon {
 
 #app{
     margin-left: 15rem;
-    padding: 2rem;
+    margin-top: -1.5rem; /* leave space for the sidebar */
+    padding: 1rem;
 }
 
 body{
     background-color: rgb(255, 255, 255);
 }
 
-#board{
-    background-color: gray;
+body #content{
+    margin-left: 15rem;
+    margin-top: 7rem;
+    font-family: Arial, sans-serif;
 }
-.chess-board{
-    width: 640px;
-    height: 640px;
-    margin-left: 30rem;
-    border: 25px solid #030303;
-}
-.black {
-    float: left;
-    width: 80px;
-    height: 80px;
-    background-color: #b3aaaa;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.white {
-    float: left;
-    width: 80px;
-    height: 80px;
-    background-color: #fff;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+body #myBoard {
+    width: 600px; 
+    margin-top: 2.5rem;
+    margin-left: 15rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2a22c;
 }
